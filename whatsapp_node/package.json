@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-fatwa-bridge",
+  "version": "1.0.0",
+  "description": "WhatsApp bridge for Fatwa Management System using Baileys",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.18.2",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.17.2",
+    "ws": "^8.16.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

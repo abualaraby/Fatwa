@@ -1,0 +1,59 @@
+{
+    "database": {
+        "path": "fatwa_tickets.db"
+    },
+    "facebook": {
+        "email": "your_facebook_email@example.com",
+        "password": "your_facebook_password",
+        "page_url": "https://www.facebook.com/your_page",
+        "check_interval_minutes": 5,
+        "enabled": true
+    },
+    "instagram": {
+        "username": "your_instagram_username",
+        "password": "your_instagram_password",
+        "check_interval_minutes": 5,
+        "enabled": true
+    },
+    "email": {
+        "imap_server": "imap.gmail.com",
+        "imap_port": 993,
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "email_address": "your_email@gmail.com",
+        "password": "your_app_password",
+        "check_interval_minutes": 2,
+        "enabled": true
+    },
+    "whatsapp": {
+        "node_bridge_port": 3001,
+        "session_path": "./whatsapp_node/session"
+    },
+    "shaikhs": [
+        {
+            "id": 1,
+            "name": "Shaikh Ahmed",
+            "phone": "966501234567",
+            "specialization": "Fiqh"
+        },
+        {
+            "id": 2,
+            "name": "Shaikh Mohammed",
+            "phone": "966507654321",
+            "specialization": "Aqeedah"
+        },
+        {
+            "id": 3,
+            "name": "Shaikh Abdullah",
+            "phone": "966509876543",
+            "specialization": "General"
+        }
+    ],
+    "settings": {
+        "auto_dispatch_replies": false,
+        "stealth_mode": true,
+        "headless_browser": false,
+        "capture_loop_enabled": true,
+        "listener_loop_enabled": true
+    }
+}

@@ -6,12 +6,17 @@
         "email": "your_facebook_email@example.com",
         "password": "your_facebook_password",
         "page_url": "https://www.facebook.com/your_page",
+        "page_id": "YOUR_PAGE_ID_HERE",
+        "session_dir": "./sessions",
+        "login_timeout_seconds": 120,
         "check_interval_minutes": 5,
         "enabled": true
     },
     "instagram": {
         "username": "your_instagram_username",
         "password": "your_instagram_password",
+        "session_dir": "./sessions",
+        "login_timeout_seconds": 120,
         "check_interval_minutes": 5,
         "enabled": true
     },

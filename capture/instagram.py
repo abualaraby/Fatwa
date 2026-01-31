@@ -4,7 +4,7 @@ import asyncio
 from datetime import datetime
 from typing import Optional
 from playwright.async_api import async_playwright, Browser, Page, BrowserContext
-from playwright_stealth import stealth_async
+from playwright_stealth import Stealth
 from loguru import logger
 
 from database import Database, Ticket, SourcePlatform
@@ -57,7 +57,8 @@ class InstagramCapture(BaseCaptureModule):
 
         if self._page is None:
             self._page = await self._context.new_page()
-            await stealth_async(self._page)
+            stealth = Stealth()
+            await stealth.apply_stealth_async(self._page)
 
     async def login(self) -> bool:
         """Login to Instagram."""

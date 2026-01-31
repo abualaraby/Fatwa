@@ -123,7 +123,7 @@ class WhatsAppBridge:
     async def is_connected(self) -> bool:
         """Check if WhatsApp is connected."""
         status = await self.get_status()
-        return status and status.get("status") == "connected"
+        return bool(status and status.get("status") == "connected")
 
     async def get_qr_code(self) -> Optional[str]:
         """Get QR code for WhatsApp Web scanning."""
